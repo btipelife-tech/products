@@ -1,65 +1,132 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MEGURI ライフログ</title>
-  <meta name="description" content="MEGURI ライフログの製品情報ページです。">
-  <link rel="stylesheet" href="../../styles.css">
-  <style>
-    .product-page{max-width:760px}
-    .back{display:inline-block;margin-bottom:28px;color:#3d7a63;text-decoration:none;font-weight:700}
-    .panel{background:rgba(255,255,255,.94);border:1px solid #dfe8e4;border-radius:24px;padding:28px;margin-top:20px}
-    .panel h2{margin-top:0}
-    .panel p,.panel li{line-height:1.9;color:#526674}
-    .notice{background:#edf5f0;border-radius:18px;padding:18px 20px;margin-top:18px}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f8f2">
+<meta name="description" content="MEGURIは記録があなたの内面を育てる、不思議なライフログ。心と体の状態、食事や運動、日々の出来事を記録し、グラフ・発見・振り返りを通して自分を知る。30日間無料、500円買い切り。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="MEGURI — 記録から、自分を発見するライフログ">
+<meta property="og:description" content="記録する。見える。気づく。自分なりの答えを見つける。30日間無料、500円買い切り。">
+<meta property="og:url" content="https://btipelife-tech.github.io/products/products/meguri/">
+<meta property="og:image" content="https://btipelife-tech.github.io/products/products/meguri/assets/og-meguri.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://btipelife-tech.github.io/products/products/meguri/">
+<link rel="preload" as="image" href="assets/capture-record.webp" type="image/webp">
+<title>MEGURI ライフログ — 記録から、自分を発見する。</title>
+<style>
+:root{--paper:#f7f8f2;--cream:#fffdf7;--ink:#183b39;--muted:#58716d;--soft:#e9f4eb;--green:#1d715c;--teal:#164e48;--mint:#b7dbc8;--line:#dce8df;--gold:#b6994e;--white:#fff;--radius:24px;--shadow:0 24px 65px rgba(24,72,58,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;line-height:1.8;overflow-x:hidden}a{color:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #459a78;outline-offset:4px}img{display:block;max-width:100%;height:auto}.container{width:min(1140px,calc(100% - 64px));margin-inline:auto}.eyebrow{font-size:12px;letter-spacing:.23em;font-weight:750;color:var(--green);margin:0 0 15px}.serif{font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif}.muted{color:var(--muted)}.section{padding:112px 0}.section-heading{max-width:765px;margin:0 auto 50px;text-align:center}.section-heading h2,.wide-heading{font-size:clamp(30px,4vw,51px);letter-spacing:-.055em;line-height:1.43;margin:0 0 18px;font-weight:750}.section-heading p{font-size:16px;color:var(--muted);line-height:2}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;white-space:nowrap;text-decoration:none;min-height:54px;padding:0 25px;border-radius:99px;font-size:14px;font-weight:800;transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease}.button:hover{transform:translateY(-2px)}.button-primary{color:white;background:var(--green);box-shadow:0 9px 24px rgba(26,100,76,.18)}.button-primary:hover{background:#165d4d}.button-outline{border:1px solid #c8dbcd;color:var(--green);background:rgba(255,255,255,.74)}.button-outline:hover{background:white}.button svg{width:17px;height:17px;flex:none}.site-header{position:sticky;z-index:30;top:0;background:rgba(247,248,242,.92);border-bottom:1px solid rgba(34,90,67,.08);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.header-inner{height:76px;display:flex;align-items:center;gap:28px}.wordmark{font-size:23px;letter-spacing:.24em;font-weight:900;text-decoration:none;white-space:nowrap;color:#194e45}.wordmark-mark{font-size:20px;color:var(--gold);letter-spacing:0;margin-left:2px}.nav{display:flex;align-items:center;gap:27px;margin-left:auto}.nav a{font-size:13px;color:#4d6860;text-decoration:none;font-weight:700;white-space:nowrap}.nav a:hover{color:var(--green)}.header-cta{min-height:41px;padding:0 17px;font-size:12px;margin-left:12px}.hero{position:relative;isolation:isolate;padding:88px 0 80px;overflow:hidden;background:radial-gradient(ellipse at 68% 39%,#d6e9d7 0%,#ecf3e9 28%,#f7f8f2 62%)}.hero::before{content:"";position:absolute;right:-140px;top:-290px;width:720px;height:750px;border:1px solid rgba(39,115,87,.14);border-radius:52% 48% 55% 45%;transform:rotate(-25deg);z-index:-1}.hero::after{content:"";position:absolute;left:-250px;bottom:-310px;width:760px;height:760px;border:1px solid rgba(39,115,87,.10);border-radius:50%;z-index:-1}.hero-grid{display:grid;grid-template-columns:1.01fr .99fr;align-items:center;gap:45px;min-height:585px}.hero h1{font-size:clamp(43px,5.5vw,74px);line-height:1.34;letter-spacing:-.072em;font-weight:820;margin:0 0 26px}.hero h1 em{font-style:normal;color:var(--green);background:linear-gradient(transparent 77%,rgba(120,193,142,.26) 77%)}.hero-lead{font-size:19px;color:#385b55;font-weight:700;line-height:1.9;margin:0 0 14px}.hero-text{font-size:15px;color:var(--muted);line-height:2.05;max-width:540px;margin:0}.hero-cta-row{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:32px}.hero-note{margin-top:17px;font-size:12px;color:#617e72}.hero-visual{position:relative;height:590px;max-width:560px;width:100%;margin-left:auto}.hero-halo{position:absolute;inset:65px 15px 65px 10px;background:linear-gradient(155deg,#ecf8e8,#a7cfbb);border-radius:47% 53% 54% 46%;box-shadow:inset 0 0 60px rgba(255,255,255,.3)}.hero-screen{position:absolute;border-radius:23px;overflow:hidden;background:white;border:6px solid white;box-shadow:0 26px 55px rgba(25,71,54,.22)}.hero-screen img{width:100%;height:100%;object-fit:cover;object-position:top}.hero-screen.main{width:56%;height:535px;left:6%;top:9px;transform:rotate(-7deg);z-index:2}.hero-screen.side{width:50%;height:460px;right:3%;top:90px;transform:rotate(9deg);z-index:1}.hero-pill{position:absolute;z-index:5;right:0;bottom:15px;background:rgba(255,255,255,.95);border-radius:17px;padding:12px 17px;box-shadow:0 12px 30px rgba(17,63,51,.12);font-weight:800;font-size:13px;color:#216b55}.hero-pill b{font-size:22px;letter-spacing:-.04em}.tiny-stars{color:#be9950;margin-right:6px}.trust-bar{border-block:1px solid #dfebe0;background:#f0f6ef}.trust-inner{display:flex;align-items:center;justify-content:center;gap:clamp(22px,4vw,65px);padding:19px 10px;flex-wrap:wrap}.trust-inner span{font-size:13px;font-weight:780;color:#45695d;display:inline-flex;align-items:center;gap:9px}.trust-inner i{font-style:normal;color:var(--green);font-size:18px}.idea{background:#fffdf9}.idea-grid{display:grid;grid-template-columns:.78fr 1.22fr;align-items:center;gap:70px}.idea-quote{position:relative;border-left:3px solid #8cbba2;padding:16px 0 16px 38px}.idea-quote p{font-size:clamp(26px,3vw,38px);line-height:1.8;font-weight:650;letter-spacing:-.045em;margin:0}.idea-quote strong{color:var(--green)}.idea-desc p{font-size:16px;line-height:2.1;color:#4d6960;margin:0 0 21px}.idea-desc p:last-child{margin:0}.pill-label{display:inline-block;border:1px solid #d3e5d7;color:#40745d;padding:5px 13px;border-radius:50px;letter-spacing:.08em;font-size:11px;font-weight:800;margin-bottom:18px}.journey{padding:112px 0;background:#eff5eb}.journey-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.journey-card{background:rgba(255,255,255,.85);padding:28px 23px 28px;border:1px solid #dce8df;border-radius:22px;position:relative;min-height:220px;box-shadow:0 6px 18px rgba(22,75,50,.025)}.journey-card .num{font-size:12px;color:#7fa18c;font-weight:850;letter-spacing:.12em}.journey-card .symbol{font-size:32px;margin:16px 0 7px;display:block}.journey-card h3{font-size:20px;margin:0 0 9px}.journey-card p{color:#5c786c;font-size:13px;line-height:1.8;margin:0}.features{background:linear-gradient(#fffdfa,#f6faf6)}.feature-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(35px,7vw,110px);align-items:center;margin:0 0 115px}.feature-row:last-child{margin-bottom:0}.feature-row:nth-child(even) .feature-media{order:2}.feature-media{display:flex;justify-content:center;align-items:center;min-height:590px;border-radius:32px;padding:35px;background:radial-gradient(circle at 50% 40%,#fffefa,#dcefe2 77%,#d2e5d6 100%);overflow:hidden;position:relative}.feature-row:nth-child(2) .feature-media{background:radial-gradient(circle at 50% 45%,#fffef9,#e4eae5 80%)}.feature-row:nth-child(3) .feature-media{background:radial-gradient(circle at 50% 40%,#fffffc,#dce8db 90%)}.feature-row:nth-child(4) .feature-media{background:radial-gradient(circle at 50% 40%,#fffffc,#e7edda 90%)}.feature-media img{height:525px;width:auto;max-width:100%;object-fit:contain;box-shadow:0 19px 40px rgba(24,65,47,.16);border-radius:10px;transition:transform .3s ease}.feature-media:hover img{transform:translateY(-6px)}.feature-copy .count{color:var(--green);font-weight:900;letter-spacing:.18em;font-size:12px}.feature-copy h3{font-size:clamp(28px,3.8vw,46px);line-height:1.45;letter-spacing:-.05em;margin:15px 0 24px}.feature-copy>p{font-size:16px;line-height:2.05;color:#53716a;margin:0 0 22px}.feature-bullets{list-style:none;padding:0;margin:29px 0 0}.feature-bullets li{position:relative;padding:7px 0 7px 27px;color:#31584e;font-size:14px;font-weight:680}.feature-bullets li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}.story{background:#163f3c;color:#fff;position:relative;overflow:hidden}.story::after{content:"";position:absolute;right:-200px;top:-150px;border:1px solid rgba(222,248,225,.18);width:650px;height:650px;border-radius:50%;pointer-events:none}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative;z-index:1}.story .eyebrow{color:#a4d6bc}.story h2{font-size:clamp(31px,4vw,53px);line-height:1.5;letter-spacing:-.055em;margin:0 0 22px}.story p{line-height:2.1;color:#d5e8dc}.story .quote-panel{padding:36px 38px;border:1px solid #4d7165;border-radius:25px;background:rgba(255,255,255,.055);font-size:clamp(20px,2.6vw,29px);line-height:1.9;font-weight:700}.story .quote-panel strong{color:#bce6c2}.story .quote-foot{font-size:12px;font-weight:400;color:#c7d9d0;margin-top:25px}.overview{background:#eef6ed}.overview-figure{border:1px solid #d6e8db;border-radius:24px;background:white;box-shadow:var(--shadow);padding:12px;overflow:hidden}.overview-figure img{border-radius:15px;width:100%}.overview .caption{text-align:center;color:#607969;font-size:12px;margin-top:18px}.audience{background:#fffefa}.audience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:920px;margin:0 auto}.audience-card{border:1px solid #dce8dd;border-radius:19px;background:#f9fcf8;padding:24px 25px;display:flex;align-items:start;gap:16px;color:#2c5145;font-size:15px;font-weight:680;line-height:1.7}.audience-card .check{display:flex;flex:none;align-items:center;justify-content:center;background:#dbeee0;color:var(--green);width:28px;height:28px;border-radius:50%;font-weight:900}.price{background:linear-gradient(145deg,#e3f1e3,#f3f8ef)}.price-card{display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center;padding:clamp(32px,6vw,70px);background:#fffefa;border:1px solid white;border-radius:32px;box-shadow:var(--shadow)}.price-card h2{font-size:clamp(32px,4vw,48px);line-height:1.5;margin:0 0 17px;letter-spacing:-.06em}.price-card p{font-size:15px;line-height:2;color:#597267;margin:0 0 25px}.price-tag{text-align:center;border-left:1px solid #dce9db;padding:18px 10px}.price-tag small{display:block;color:#5e7c68;font-weight:700;font-size:15px}.price-tag strong{display:block;color:#1e6e56;font-size:76px;line-height:1.3;letter-spacing:-.075em;font-weight:900}.price-tag strong span{font-size:23px;letter-spacing:0;margin-left:5px}.price-tag p{font-size:13px;margin:0 0 19px}.faq{background:#fffefa}.faq-wrap{max-width:830px;margin:0 auto}.faq details{border-bottom:1px solid #dce8df;padding:0}.faq summary{list-style:none;cursor:pointer;padding:24px 38px 24px 0;font-size:16px;font-weight:780;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";position:absolute;right:6px;top:18px;font-size:25px;font-weight:400;color:var(--green)}.faq details[open] summary::after{content:"−"}.faq details p{margin:0;padding:0 35px 22px 0;font-size:14px;color:var(--muted);line-height:2}.support{background:#f4f7f0;padding:65px 0;border-top:1px solid #e1eadf}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.support h2{font-size:21px;margin:0 0 14px}.support p{font-size:13px;color:#5c766d;line-height:2}.support a:not(.button){color:#1b7057;text-underline-offset:3px}.support .label{font-weight:700;color:#36584b}.footer{background:#153d3a;color:#cbded5;padding:36px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer .wordmark{color:#f4faf5;font-size:17px}.footer-links{display:flex;gap:20px}.footer-links a{text-decoration:none}.footer-links a:hover{text-decoration:underline}.footnote{font-size:11px;color:#729187;margin-top:9px}
+@media(max-width:980px){.nav{gap:15px}.hero-grid{grid-template-columns:1fr .95fr;gap:22px}.hero h1{font-size:clamp(38px,5vw,58px)}.hero-visual{height:500px}.hero-screen.main{height:440px}.hero-screen.side{height:375px}.feature-row{gap:35px}.feature-media{min-height:475px}.feature-media img{height:425px}.journey-grid{grid-template-columns:repeat(2,1fr)}.story-grid{gap:35px}.section{padding:85px 0}}
+@media(max-width:720px){html{scroll-padding-top:70px}.container{width:min(100% - 36px,590px)}.header-inner{height:68px}.wordmark{font-size:20px}.nav{display:none}.header-cta{margin-left:auto;min-height:37px;padding:0 14px}.hero{padding:52px 0 50px}.hero-grid{grid-template-columns:1fr;gap:23px}.hero h1{font-size:clamp(40px,10vw,62px)}.hero-lead{font-size:16px}.hero-text{font-size:14px}.hero-cta-row{margin-top:24px}.hero-visual{height:510px;max-width:495px;margin:0 auto}.hero-screen.main{left:12%;width:52%;height:458px}.hero-screen.side{right:11%;width:47%;height:395px;top:75px}.hero-pill{right:4%;bottom:10px}.trust-inner{justify-content:start;gap:12px 20px}.trust-inner span{font-size:12px}.idea-grid,.story-grid,.support-grid,.price-card{grid-template-columns:1fr;gap:27px}.idea-quote{padding-left:23px}.idea-quote p{font-size:27px}.journey-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.journey-card{padding:19px 16px;min-height:210px}.journey-card h3{font-size:18px}.journey-card p{font-size:12px}.feature-row,.feature-row:nth-child(even){grid-template-columns:1fr;gap:23px;margin-bottom:75px}.feature-row:nth-child(even) .feature-media{order:0}.feature-copy{order:-1}.feature-row:nth-child(even) .feature-copy{order:-1}.feature-media{min-height:430px;padding:20px}.feature-media img{height:388px}.feature-copy h3{font-size:33px;margin:8px 0 15px}.feature-copy>p{font-size:14px}.story .quote-panel{padding:27px;font-size:22px}.audience-grid{grid-template-columns:1fr}.audience-card{padding:18px}.price-tag{border-left:0;border-top:1px solid #dce9db;padding-top:23px}.price-tag strong{font-size:68px}.section{padding:72px 0}.section-heading{margin-bottom:34px}.section-heading h2{font-size:32px}.section-heading p{font-size:14px}.overview-figure{padding:6px;border-radius:15px}.overview-figure img{border-radius:11px}.faq summary{font-size:14px}}
+@media(max-width:420px){.container{width:calc(100% - 30px)}.hero h1{font-size:39px}.hero-visual{height:420px}.hero-screen.main{height:370px;left:8%}.hero-screen.side{height:330px;right:6%;top:53px}.hero-pill{font-size:11px;padding:8px 11px}.hero-pill b{font-size:17px}.journey-grid{gap:10px}.journey-card{min-height:205px}.feature-media{min-height:390px}.feature-media img{height:348px}.button{padding:0 18px}.footer-inner{align-items:start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
 </head>
 <body>
-  <main class="wrap product-page">
-    <a class="back" href="../../">← 製品一覧へ</a>
-
-    <header class="hero">
-      <p class="eyebrow">MEGURI</p>
-      <h1>MEGURI ライフログ</h1>
-      <p class="lead">AIに答えを決めてもらうのではなく、日々の記録から自分で自分を発見するためのライフログ。</p>
-    </header>
-
-    <section class="panel">
-      <h2>MEGURIについて</h2>
-      <p>自分のことは、誰かに教わってもわかりません。自分の腹に落ちた時、はじめてわかるものです。MEGURIは、その瞬間のための記録です。</p>
-      <ul>
-        <li>日々の状態や行動を記録</li>
-        <li>グラフやカレンダーで振り返り</li>
-        <li>巡りノートや内なる羅針盤で自己分析</li>
-        <li>占星術による参考情報</li>
-      </ul>
-      <div class="notice">
-        最初の30日間は無料。気に入ったら500円で永久利用。サブスクリプションはありません。
-      </div>
-    </section>
-
-    <section class="panel">
-      <h2>サポート</h2>
-      <p>MEGURIに関するお知らせ、よくある質問、問い合わせ方法、プライバシーポリシーはこのページに順次追加できます。</p>
-      <p><strong>お問い合わせ先：</strong>btipe.life@gmail.com</p>
-    </section>
-
-    <section class="panel">
-      <h2>プライバシー</h2>
-      <p>記録データは基本的に端末内で扱う、
-iCloudバックアップはユーザーが手動で実行、
-RevenueCatを課金管理に使用、
-Appleのアプリ内課金を使用、
-広告なし、
-医療診断を目的としない、
-問い合わせ先、
-ポリシー変更時の扱い</p>
-    </section>
-
-    <footer>
-      <p>© 2026</p>
-    </footer>
-  </main>
+<header class="site-header">
+ <div class="container header-inner">
+  <a class="wordmark" href="#top" aria-label="MEGURI トップへ">MEGURI<span class="wordmark-mark">✧</span></a>
+  <nav class="nav" aria-label="ページ内メニュー">
+   <a href="#concept">想い</a><a href="#features">できること</a><a href="#for-you">こんな方へ</a><a href="#price">料金</a><a href="#faq">よくある質問</a><a href="#support">サポート</a>
+  </nav>
+  <a class="button button-primary header-cta" href="https://apps.apple.com/jp/app/id6817304993" target="_blank" rel="noopener noreferrer">App Storeで見る ↗</a>
+ </div>
+</header>
+<main id="top">
+ <section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+   <div>
+    <p class="eyebrow">自分を知る、不思議なライフログ</p>
+    <h1 id="hero-title">記録は、いつか<br><em>「気づき」</em>に<br>変わる。</h1>
+    <p class="hero-lead">記録があなたの内面を育てる。<br>それが、MEGURIのライフログ。</p>
+    <p class="hero-text">気持ち、体調、食事、行動、心に残った出来事。<br>何気ない毎日を残していくと、まだ知らなかった自分が少しずつ見えてくる。</p>
+    <div class="hero-cta-row">
+     <a class="button button-primary" href="https://apps.apple.com/jp/app/id6817304993" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8.5 4.5l7 13M15.5 4.5l-7 13M5 15h14"/></svg> App Storeで無料体験 <span aria-hidden="true">↗</span></a>
+     <a class="button button-outline" href="#features">MEGURIを知る <span aria-hidden="true">↓</span></a>
+    </div>
+    <p class="hero-note">30日間無料体験 ／ その後は500円の買い切り ／ 広告なし</p>
+   </div>
+   <div class="hero-visual" aria-label="MEGURIの記録・推移画面の紹介画像">
+    <div class="hero-halo" aria-hidden="true"></div>
+    <div class="hero-screen side"><img src="assets/capture-trends.webp" alt="MEGURIの推移グラフを紹介する実際のプロモーション画像" width="760" height="1648"></div>
+    <div class="hero-screen main"><img src="assets/capture-record.webp" alt="MEGURIの簡単な日々の記録画面を紹介する実際のプロモーション画像" width="760" height="1648" fetchpriority="high"></div>
+    <div class="hero-pill"><span class="tiny-stars">✦</span>毎日の記録から、<br><b>自分を発見。</b></div>
+   </div>
+  </div>
+ </section>
+ <div class="trust-bar" aria-label="MEGURIの特長">
+  <div class="container trust-inner"><span><i aria-hidden="true">✓</i> 5段階ボタンで簡単</span><span><i aria-hidden="true">✓</i> 写真・動画も記録</span><span><i aria-hidden="true">✓</i> グラフで振り返り</span><span><i aria-hidden="true">✓</i> 一度の購入で永久利用</span></div>
+ </div>
+ <section id="concept" class="section idea">
+  <div class="container idea-grid">
+   <div><span class="pill-label">ABOUT MEGURI</span><div class="idea-quote serif"><p>自分のことは、<br>誰かに教わっても<br>わかりません。<br><strong>腹に落ちた時</strong>、<br>はじめてわかる。</p></div></div>
+   <div class="idea-desc"><p>「今日は、なぜあんな気持ちになったんだろう？」<br>「どうして、同じことを繰り返すんだろう？」</p><p>自分を知る答えは、いつも誰かが教えてくれるわけではありません。過去の自分を見返したとき、ふっと気づくことがあります。</p><p><strong>MEGURIは、その瞬間のための記録です。</strong></p><p>毎日を手軽に記録し、変化を見て、気になることを自分なりに深掘りする。AIに答えを決めてもらうのではなく、あなた自身が発見することを大切にしています。</p></div>
+  </div>
+ </section>
+ <section class="section journey" aria-labelledby="journey-title">
+  <div class="container">
+   <div class="section-heading"><p class="eyebrow">SMALL STEPS, DEEP DISCOVERY</p><h2 id="journey-title">毎日の小さな記録が、<br>自分を知る旅になる。</h2><p>使い方はシンプル。記録を重ねるほど、振り返るための材料が増えていきます。</p></div>
+   <div class="journey-grid">
+    <article class="journey-card"><span class="num">STEP 01</span><span class="symbol" aria-hidden="true">✎</span><h3>記録する</h3><p>心と体、口・心・行、夢や日々の出来事を残す。</p></article>
+    <article class="journey-card"><span class="num">STEP 02</span><span class="symbol" aria-hidden="true">⌁</span><h3>見える化</h3><p>カレンダーとグラフで、変化や積み重ねを眺める。</p></article>
+    <article class="journey-card"><span class="num">STEP 03</span><span class="symbol" aria-hidden="true">✧</span><h3>発見する</h3><p>自分で選んだ条件から、生活の傾向を探してみる。</p></article>
+    <article class="journey-card"><span class="num">STEP 04</span><span class="symbol" aria-hidden="true">✦</span><h3>振り返る</h3><p>内なる羅針盤で、自分がどうありたいかを考える。</p></article>
+   </div>
+  </div>
+ </section>
+ <section id="features" class="section features" aria-labelledby="features-title">
+  <div class="container">
+   <div class="section-heading"><p class="eyebrow">FOUR WAYS TO KNOW YOURSELF</p><h2 id="features-title">記録・推移・発見・楽しさ。<br>MEGURIにできること。</h2><p>あれこれアプリを行き来しなくても、毎日の暮らしと心の動きをひとつの場所に。</p></div>
+   <article class="feature-row">
+    <div class="feature-media"><img src="assets/capture-record.webp" alt="口・心・行などを5段階で記録する画面" loading="lazy" width="760" height="1648"></div>
+    <div class="feature-copy"><span class="count">01 ／ SIMPLE</span><h3>続けられるのは、<br>記録が簡単だから。</h3><p>心、体調、充実感、食事、瞑想、運動、飲酒量など。複雑な入力を毎回する必要はありません。5段階のボタンを押し、その日の自分を少しずつ残せます。</p><p>書きたいときには自由ノートに文章を。写真や動画も、その日の記憶として残せます。</p><ul class="feature-bullets"><li>直感的な5段階入力</li><li>気分や体調、生活習慣をひとまとめ</li><li>自由ノートに写真・動画も保存</li></ul></div>
+   </article>
+   <article class="feature-row">
+    <div class="feature-media"><img src="assets/capture-trends.webp" alt="心や体調の推移、巡りの変化をグラフで見る画面" loading="lazy" width="760" height="1648"></div>
+    <div class="feature-copy"><span class="count">02 ／ VISUALIZE</span><h3>見返すことで、<br>変化が見えてくる。</h3><p>「最近調子がいいのはなぜ？」「飲酒が多かった週はどうだった？」。一日の印象だけでなく、少し長い時間の流れを見てみましょう。</p><p>状態の推移と、口・心・行の記録をグラフで確認。占星術の流れも参考表示でき、過去の日々を違った角度から眺められます。</p><ul class="feature-bullets"><li>カレンダーで記録を一覧</li><li>週・月・年などの推移グラフ</li><li>占星術は参考情報として表示</li></ul></div>
+   </article>
+   <article class="feature-row">
+    <div class="feature-media"><img src="assets/capture-discovery.webp" alt="MEGURI発見と内なる羅針盤の紹介画面" loading="lazy" width="760" height="1648"></div>
+    <div class="feature-copy"><span class="count">03 ／ DISCOVER</span><h3>答えをもらうより、<br>自分で気づく。</h3><p>MEGURI発見では、「食事が控えめだった日」「よく眠れた日」など、気になる条件を自分で設定して記録の傾向を探せます。</p><p>内なる羅針盤では、心に引っかかった出来事を、事実・気持ち・動機・結果の順に整理。最後に問いかけるのは、相手をどう変えるかではなく、<strong>「自分はどうありたいか」</strong>です。</p><ul class="feature-bullets"><li>自分で条件を選ぶ「MEGURI発見」</li><li>心に残った出来事を振り返る巡りノート</li><li>思考を整理する深掘り・内なる羅針盤</li></ul></div>
+   </article>
+   <article class="feature-row">
+    <div class="feature-media"><img src="assets/capture-journal.webp" alt="写真・動画の記録、占星術チャートなどの画面" loading="lazy" width="760" height="1648"></div>
+    <div class="feature-copy"><span class="count">04 ／ ENJOY</span><h3>日常も思い出も、<br>楽しく残そう。</h3><p>気になる本を見つけたら写真を一枚。旅先で心に残った景色は動画で。日記や生活記録を、自分らしい形で残せます。</p><p>占星術のチャートや、記録を続けることで出会える妖精のことばなど、振り返る時間がちょっと楽しくなる要素も。</p><ul class="feature-bullets"><li>写真・動画を添えた自由ノート</li><li>占星術のチャートと参考情報</li><li>王冠や妖精のことばを楽しむ</li></ul></div>
+   </article>
+  </div>
+ </section>
+ <section class="section story" aria-labelledby="story-title">
+  <div class="container story-grid">
+   <div><p class="eyebrow">INNER COMPASS</p><h2 id="story-title">相手がどうであれ、<br>自分はどうありたい？</h2><p>人間関係でモヤモヤしたとき、後悔したとき、うれしかったとき。その出来事を自分なりに整理してみる。</p><p>MEGURIの「内なる羅針盤」は、自分を責めるためでも、誰かを裁くためでもありません。次にどうありたいかを考えるための時間です。</p></div>
+   <div class="quote-panel serif">「同じことが<br>もう一度起きたら、<br><strong>自分はどうありたい？</strong>」<div class="quote-foot">答えを急がなくてもいい。自分の言葉で、少しずつ。</div></div>
+  </div>
+ </section>
+ <section class="section overview" aria-labelledby="overview-title">
+  <div class="container"><div class="section-heading"><p class="eyebrow">ONE PLACE FOR YOUR DAILY LIFE</p><h2 id="overview-title">ひとつのアプリに、<br>あなたの日々を。</h2><p>記録、グラフ、気づき、思い出。毎日の自分に必要なものを、まとめて。</p></div><div class="overview-figure"><img src="assets/meguri-overview.webp" alt="MEGURIの記録、推移、ノート、占星術など複数の画面を並べた紹介画像" loading="lazy" width="2180" height="934"></div><p class="caption">掲載画像は実際のアプリをもとにしたプロモーション画像です。表示は端末やバージョンにより異なります。</p></div>
+ </section>
+ <section id="for-you" class="section audience" aria-labelledby="audience-title">
+  <div class="container"><div class="section-heading"><p class="eyebrow">FOR YOU</p><h2 id="audience-title">こんな方に、MEGURIを。</h2><p>特別な目標がなくても大丈夫。ちょっと自分のことを知りたいと思ったら、そこから始められます。</p></div><div class="audience-grid">
+   <div class="audience-card"><span class="check" aria-hidden="true">✓</span><span>自分の気持ちや行動のパターンを知りたい</span></div>
+   <div class="audience-card"><span class="check" aria-hidden="true">✓</span><span>人間関係で感じたモヤモヤを整理したい</span></div>
+   <div class="audience-card"><span class="check" aria-hidden="true">✓</span><span>心や体調、生活習慣の変化を見返したい</span></div>
+   <div class="audience-card"><span class="check" aria-hidden="true">✓</span><span>日記・写真・動画を一か所に残したい</span></div>
+   <div class="audience-card"><span class="check" aria-hidden="true">✓</span><span>瞑想や内観を日々の習慣にしたい</span></div>
+   <div class="audience-card"><span class="check" aria-hidden="true">✓</span><span>自分なりの答えを、少しずつ見つけたい</span></div>
+  </div></div>
+ </section>
+ <section id="price" class="section price" aria-labelledby="price-title"><div class="container"><div class="price-card"><div><p class="eyebrow">SIMPLE PRICING</p><h2 id="price-title">まずは30日間、<br>無料で使ってみよう。</h2><p>MEGURIの価値は、使って自分の記録を振り返ることでわかってくるもの。まずは無理なく試してください。気に入ったら一度の購入で永久利用。月額料金も広告もありません。</p><a class="button button-primary" href="https://apps.apple.com/jp/app/id6817304993" target="_blank" rel="noopener noreferrer">App StoreでMEGURIを見る ↗</a></div><div class="price-tag"><small>30日間無料体験のあと</small><strong>500<span>円</span></strong><p>買い切り・永久利用<br>サブスクリプションなし</p><span class="pill-label">広告なし ／ 購入復元に対応</span></div></div></div></section>
+ <section id="faq" class="section faq" aria-labelledby="faq-title"><div class="container faq-wrap"><div class="section-heading"><p class="eyebrow">FAQ</p><h2 id="faq-title">よくある質問</h2></div>
+  <details><summary>本当に30日間無料で使えますか？</summary><p>はい。最初の30日間は無料でお試しいただけます。その後、継続して利用する場合は500円の買い切り購入です。サブスクリプションではありません。</p></details>
+  <details><summary>どんなことを記録できますか？</summary><p>心・体調・充実感、食事・運動・瞑想・夢・飲酒量などの生活の状態や行動、自由ノートへの文章・写真・動画を記録できます。</p></details>
+  <details><summary>AIが自分の性格や将来を判定するアプリですか？</summary><p>いいえ。MEGURIは答えを一方的に決めるのではなく、自分自身の記録を手がかりに振り返るためのアプリです。医療的な診断や治療を目的とするものではありません。占星術の情報も参考としてご利用ください。</p></details>
+  <details><summary>記録はどこに保存されますか？</summary><p>日々の記録は基本的に端末内で扱います。iCloud Driveへのバックアップと復元は、アプリ内でユーザーが手動で実行する方式です。機種変更前には忘れずにバックアップしてください。</p></details>
+  <details><summary>一度購入したあと、もう一度支払う必要がありますか？</summary><p>永久利用は非消耗型のアプリ内購入です。購入したApple Accountで利用する場合、アプリの購入復元機能から購入状態を復元できます。</p></details>
+  <details><summary>使い方や不具合について問い合わせできますか？</summary><p>はい。このページ下部のサポート窓口へメールでお問い合わせください。端末の種類、iOSのバージョン、発生した状況などを添えていただくと確認しやすくなります。パスワードなどの機密情報は送らないでください。</p></details>
+ </div></section>
+ <section class="support" id="support"><div class="container support-grid"><div><h2>サポート・お問い合わせ</h2><p>MEGURIに関する操作方法、ご質問、不具合報告はこちらへ。内容を確認のうえ対応します。</p><p class="label">メール：<a href="mailto:btipe.life@gmail.com?subject=MEGURI%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">btipe.life@gmail.com</a></p><p><a href="../../">← 製品一覧に戻る</a></p></div><div id="privacy"><h2>プライバシー・データについて</h2><p>日々の記録データは基本的にお使いの端末内で扱います。iCloud Driveへのバックアップ・復元は手動操作です。アプリ内購入にはAppleの課金機能および購入管理サービス（RevenueCat）を使用します。広告は表示しません。</p><p>購入情報は、AppleのApp Storeプライバシー表示もご参照ください。MEGURIは医療診断や治療を提供するアプリではありません。</p><p><a href="https://apps.apple.com/jp/app/id6817304993" target="_blank" rel="noopener noreferrer">App Storeの製品情報・プライバシー表示 ↗</a></p></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><a class="wordmark" href="#top">MEGURI<span class="wordmark-mark">✧</span></a><div class="footnote">記録から、自分を発見するライフログ。</div></div><div class="footer-links"><a href="#features">機能紹介</a><a href="#price">料金</a><a href="#support">サポート</a><a href="#privacy">プライバシー</a></div><span>© 2026 MEGURI</span></div></footer>
 </body>
 </html>
